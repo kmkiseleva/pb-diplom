@@ -36,6 +36,8 @@ function check() {
 }
 
 function click(row,col) {
+  console.log(row,col);
+
   if (gameCounter % 2 === 0) {
     activePlayer = 0;
   } else {
@@ -45,5 +47,5 @@ function click(row,col) {
   board[row][col] = players[activePlayer];
   renderBoard(board);
   check();
-  gameCounter++;
+  gameCounter++;  
 };
