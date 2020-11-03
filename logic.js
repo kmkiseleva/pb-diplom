@@ -12,7 +12,7 @@ function startGame() {
 
   activePlayer = 0;  
   renderBoard(board);
-};
+}
 
 function check() {
   let marker = players[activePlayer];
@@ -47,5 +47,5 @@ function click(row,col) {
   board[row][col] = players[activePlayer];
   renderBoard(board);
   check();
-  gameCounter++;  
-};
+  gameCounter++;
+}
