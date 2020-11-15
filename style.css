@@ -1,6 +1,11 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  background-color: rgba(225, 140, 140, 0.5);
+}
+
 .panel {
   text-align: center;
 }
@@ -59,11 +64,13 @@ button {
   padding: 15px;
   background-color: #fff;
   font-size: 20pt;
+  text-transform: uppercase;
   border-radius: 15px;
   opacity: 0.7;
 }
 
-button:hover {
+button:hover,
+button:focus {
   box-shadow: 2px 1px 0 rgb(0, 0, 0);
 }
 
